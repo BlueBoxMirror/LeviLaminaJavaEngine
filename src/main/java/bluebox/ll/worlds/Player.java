@@ -1,8 +1,7 @@
-package bluebox.levilamina.engine.worlds;
+package bluebox.ll.worlds;
 
-public class Player {
+public class Player extends Entity {
     private Player(){}
-    private long nativePtr=0;
 
     @Override
     public boolean equals(Object obj) {
@@ -18,4 +17,6 @@ public class Player {
 
     public native void tell(String message);
     public native String getRealName();
+    public native void setName(String name);
+
 }
